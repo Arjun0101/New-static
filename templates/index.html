@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Flask-arjun-app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arjun Singh - Data Analyst Portfolio">
+    <meta name="author" content="Arjun Singh">
+
+    <title>Arjun Singh — Data Analyst</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/gt_favicon.png') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 3 (to match the friend template style) -->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Icon font -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to Flask-arjun-app!</h1>
-    <p>Hello, my name is Arjun Singh. This Flask app is deployed on AWS Elastic Beanstalk.</p>
+
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="1">
+        <h1 id="logo" class="text-center">
+            <img class="img-circle" src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Arjun Singh" onerror="this.style.display='none'">
+            <span class="title">Arjun Singh</span>
+            <span class="tagline">Data Analyst | Business Insights</span>
+        </h1>
+    </div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse" id="nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#availability">Availability</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <div class="container">
+        <div class="row topspace">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <!-- About -->
+                <section id="about" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">About Me</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>
+                            Highly motivated <strong>Data Analyst</strong> with hands-on experience in sales operations and
+                            e‑commerce reporting. Recognized for strong communication, reliability, and the ability
+                            to translate data into actions that improve customer experience and business outcomes.
+                            Adept at working independently and collaborating in cross‑functional teams.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Skills</h1>
+                    </header>
+                    <div class="entry-content">
+                        <ul class="technical-skills-list">
+                            <li><strong>Analytics & Reporting:</strong> Microsoft Excel, PowerPoint, Word</li>
+                            <li><strong>Business Skills:</strong> Planning, critical thinking, time management, product knowledge</li>
+                            <li><strong>Tools & Ops:</strong> Windows admin, presentation skills</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section id="experience" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Experience</h1>
+                    </header>
+                    <div class="entry-content">
+                        <h3>Techno Trend — E‑commerce Executive, Sirsa <small>(2022–2023)</small></h3>
+                        <ul>
+                            <li>Maintained sales reports and monitored listing performance across marketplaces.</li>
+                            <li>Researched new products and listed on Amazon, Flipkart, Ajio, and Jiomart.</li>
+                            <li>Processed orders, tracked returns, and prepared operational reports.</li>
+                        </ul>
+
+                        <h3>Best Price, Jalandhar — Customer Service Representative <small>(2021–2022)</small></h3>
+                        <ul>
+                            <li>Resolved 200+ customer inquiries per week while meeting service benchmarks.</li>
+                            <li>Collaborated with team members to resolve complaints with appropriate actions.</li>
+                            <li>Handled admin tasks: phone, email responses, and correspondence preparation.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section id="education" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Education</h1>
+                    </header>
+                    <div class="entry-content">
+                        <h3>Durham College — Canada <small>(Present)</small></h3>
+                        <p>Data Analytics for Business Decision Making</p>
+
+                        <h3>Lovely Professional University — India <small>(2019–2023)</small></h3>
+                        <p>Bachelor of Technology (BTech)</p>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section id="languages" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Languages</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>English • Hindi • Punjabi</p>
+                    </div>
+                </section>
+
+                <!-- Availability -->
+                <section id="availability" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Availability</h1>
+                    </header>
+                    <div class="entry-content">
+                        <ul>
+                            <li>Tuesday — Afternoon</li>
+                            <li>Wednesday — Morning</li>
+                            <li>Thursday — Full day</li>
+                            <li>Saturday — Full day</li>
+                            <li>Sunday — Full day</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section id="contact" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Contact</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>
+                            <!-- Replace the placeholders below when ready -->
+                            <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> &nbsp;
+                            <a href="#" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="footer" class="topspace">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 widget">
+                <div class="widget-body">
+                    <p class="text-center">&copy; 2025 Arjun Singh. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
